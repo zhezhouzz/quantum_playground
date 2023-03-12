@@ -16,3 +16,18 @@ Install [opam](https://opam.ocaml.org/doc/Install.html) and ocaml >= `4.12`. For
 ## Run
 
     $ dune exec -- bin/main.exe
+
+## Language
+
+```
+Index ::= int
+Gate ::= H Index | X Index | CX Index Index
+Prog ::=
+    | Gate
+    | Gate ; Prog
+```
+
+Now we provides `3` [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate):
+- X (Pauli-X)
+- CX (Controlled Not)
+- H (Hadamard)
