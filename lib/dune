@@ -1,0 +1,10 @@
+(library
+ (name quantum_playground)
+ (wrapped false)
+ (modules
+   misc
+   lang
+   qbits
+   eval
+ )
+)

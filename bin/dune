@@ -1,0 +1,5 @@
+(executable
+ (public_name quantum_playground)
+ (name main)
+ (modules main)
+ (libraries quantum_playground))
