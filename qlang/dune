@@ -1,5 +1,5 @@
 (library
- (name quantum_playground)
+ (name qlang)
  (wrapped false)
  (modules
    misc

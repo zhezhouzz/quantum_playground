@@ -2,4 +2,5 @@
  (public_name quantum_playground)
  (name main)
  (modules main)
- (libraries quantum_playground))
+ (preprocess (pps ppx_inline_test ppx_assert ppx_jane))
+ (libraries qlang qparser core core_unix.sys_unix core_unix.command_unix))

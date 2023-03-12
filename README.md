@@ -15,16 +15,19 @@ Install [opam](https://opam.ocaml.org/doc/Install.html) and ocaml >= `4.12`. For
 
 ## Run
 
-    $ dune exec -- bin/main.exe
+    $ dune exec -- bin/main.exe run-qc SOURCE_FILE
+
+For example:
+
+    & dune exec -- bin/main.exe run-qc data/simon.qc
 
 ## Language
 
 ```
 Index ::= int
 Gate ::= H Index | X Index | CX Index Index
-Prog ::=
-    | Gate
-    | Gate ; Prog
+Gates := Gate | Gate ; Gates
+Prog ::= [0|1]* Gates
 ```
 
 Now we provides `3` [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate):

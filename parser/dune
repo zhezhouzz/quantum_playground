@@ -1,0 +1,21 @@
+(ocamllex
+ (modules lexer)
+)
+
+(menhir
+ (modules parser)
+ (flags -lg 1 -la 1 -lc 2)
+)
+
+(library
+ (name qparser)
+ (wrapped false)
+ (modules_without_implementation past)
+ (modules
+   lexer
+   parser
+   past
+   parse
+ )
+ (libraries qlang menhirLib)
+)
