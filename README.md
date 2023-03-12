@@ -30,7 +30,7 @@ Gates := Gate | Gate ; Gates
 Prog ::= [0|1]* Gates
 ```
 
-Now we provides `3` [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate):
+Now we provide `3` [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate):
 - X (Pauli-X)
 - CX (Controlled Not)
 - H (Hadamard)
