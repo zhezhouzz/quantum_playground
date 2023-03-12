@@ -12,6 +12,8 @@
 Install [opam](https://opam.ocaml.org/doc/Install.html) and ocaml >= `4.12`. For example, OCaml 5.0:
 
     $ opam switch 5.0.0
+    $ opam install ocolor.1.3.0
+    $ opam install core.v0.15.1 core_unix.v0.15.2 menhirLib.20220210 menhir.20220210
 
 ## Run
 
